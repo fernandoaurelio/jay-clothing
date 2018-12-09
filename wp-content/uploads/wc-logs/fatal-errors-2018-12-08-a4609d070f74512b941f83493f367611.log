@@ -1,0 +1,8 @@
+2018-12-08T14:10:20+00:00 CRITICAL syntax error, unexpected 'do_shortcode' (T_STRING) in C:\xampp\htdocs\jclothing\wp-content\themes\shop-isle\header.php on line 25
+
+2018-12-08T15:59:31+00:00 CRITICAL Call to undefined function irequire_once() in C:\xampp\htdocs\jclothing\wp-content\themes\shop-isle\inc\woocommerce\functions.php on line 9
+
+2018-12-08T15:59:39+00:00 CRITICAL require_once(): Failed opening required 'library/functions/shop_menu_account.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\jclothing\wp-content\themes\shop-isle\inc\woocommerce\functions.php on line 9
+
+2018-12-08T16:00:09+00:00 CRITICAL Cannot redeclare wc_get_account_menu_items() (previously declared in C:\xampp\htdocs\jclothing\wp-content\plugins\woocommerce\includes\wc-account-functions.php:89) in C:\xampp\htdocs\jclothing\wp-content\themes\shop-isle\library\functions\shop_menu_account.php on line 45
+
