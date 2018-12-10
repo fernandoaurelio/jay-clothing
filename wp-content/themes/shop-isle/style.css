@@ -115,20 +115,18 @@ span.menu-account ul li a:hover{
     width: 30%;
     float: left;
     margin-right: 30px;
-    margin-bottom: 50px;
     max-width: 270px;
-    height: 390px;
-    padding-top: 14px;
 }
-.card-produto{
-	-webkit-box-shadow: 4px 19px 32px -10px rgba(179,179,179,1);
-	-moz-box-shadow: 4px 19px 32px -10px rgba(179,179,179,1);
-	box-shadow: 4px 19px 32px -10px rgba(179,179,179,1);
+.card-produto-container .card-produto .card-image:hover{
+	border: 1px solid #000;
 }
 .card-produto .card-image{
-	width: 240px;
-	margin: 0 auto;
-	display: block;
+    height: 360px;
+    margin: 0 auto;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .card-image .card-whishlist{
 	position: absolute;
@@ -144,25 +142,6 @@ span.menu-account ul li a:hover{
 	font-size: 25px;
 	color: #fff;
 }
-.card-descricao{
-	position: relative;
-	display: block;
-	bottom: 110px;
-	background-color: #fff;
-	max-width: 300px;
-	margin: 0 auto;
-}
-.card-produto .descricao-texto{	
-	width: 240px;
-	margin: 0 auto;
-	display: block;
-}
-.card-descricao .descricao-texto h4{
-	color: #000;
-	font-weight: 600;
-	text-align: center;
-}
-
 .descricao-shop ul{
 	margin: 0;
     padding-left: 14px;
@@ -187,7 +166,7 @@ span.menu-account ul li a:hover{
 }
 .descricao-shop ul li a:hover{
 	border: 1px solid #c9c9c9;
-	padding: 5px 17px;
+	/* padding: 5px 17px; */
 	transition: .3s;
 }
 .descricao-shop ul li a span{

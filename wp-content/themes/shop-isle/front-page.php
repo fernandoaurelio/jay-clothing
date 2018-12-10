@@ -18,14 +18,13 @@ get_header();
 		</div>
 		<div class="card-produto-container">
 			<div class="card-produto">
-				<div class="card-image">
+				<div class="card-image" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_feminina2.jpg');">
 					<div class="card-whishlist">
 						<ul class="social">
 							<li><i class="far fa-heart"></i></li>
 							<li><i class="fas fa-share"></i></li>
 						</ul>
-					</div>
-					<img src="http://localhost/jclothing/wp-content/uploads/2018/12/roupa_feminina2.jpg" alt="Roupa Feminina">
+					</div>					
 				</div>
 				<div class="card-descricao">
 					<div class="descricao-texto">
@@ -42,14 +41,13 @@ get_header();
 			</div>
 			<!-- OUtro Card -->
 			<div class="card-produto">
-				<div class="card-image">
+				<div class="card-image" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_feminina2.jpg');">
 					<div class="card-whishlist">
 						<ul class="social">
 							<li><i class="far fa-heart"></i></li>
 							<li><i class="fas fa-share"></i></li>
 						</ul>
-					</div>
-					<img src="http://localhost/jclothing/wp-content/uploads/2018/12/roupa_feminina2.jpg" alt="Roupa Feminina">
+					</div>					
 				</div>
 				<div class="card-descricao">
 					<div class="descricao-texto">
@@ -66,14 +64,13 @@ get_header();
 			</div>
 						<!-- OUtro Card -->
 			<div class="card-produto">
-				<div class="card-image">
+				<div class="card-image" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_feminina2.jpg');">
 					<div class="card-whishlist">
 						<ul class="social">
 							<li><i class="far fa-heart"></i></li>
 							<li><i class="fas fa-share"></i></li>
 						</ul>
-					</div>
-					<img src="http://localhost/jclothing/wp-content/uploads/2018/12/roupa_feminina2.jpg" alt="Roupa Feminina">
+					</div>					
 				</div>
 				<div class="card-descricao">
 					<div class="descricao-texto">
