@@ -13,80 +13,130 @@ get_header();
 		<?php echo do_shortcode('[smartslider3 slider=2]');?>
 	</div>
 	<div class="container-produtos">
-		<div class="titulo-produto">
-			<h1>Aqui tem titulo</h1>
+		<div class="titulo-secao">
+			<h2>Lançamentos</h2>
 		</div>
-		<div class="card-produto-container">
+		<div class="card-produtos-container">
+			<!-- inicio card -->
 			<div class="card-produto">
-				<div class="card-image" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_feminina2.jpg');">
-					<div class="card-whishlist">
-						<ul class="social">
-							<li><i class="far fa-heart"></i></li>
-							<li><i class="fas fa-share"></i></li>
-						</ul>
-					</div>					
-				</div>
+				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
 				<div class="card-descricao">
-					<div class="descricao-texto">
-						<h4>Camiseta Feminina #2</h4>
-						<p>Uma linda camisa, para o teste a seguir</p>
+					<div class="descricao-titulo">
+						<h5>Camiseta Floral</h5>
 					</div>
-					<div class="descricao-shop">
-						<ul>
-							<li><a href="#">Leia Mais</a></li>
-							<li class="shop"><a href="#"><span><i class="fas fa-shopping-cart"></i></span>Comprar</a></li>
-						</ul>
+					<div class="produto-preco">
+						<p>R$ 20,00</p>
 					</div>
+				</div>
+				<div class="card-botoes">
+					<a href="#" class="carrinho">Adicione ao Carrinho</a>
+					<a href="#" class="detalhes">Mais Detalhes</a>
 				</div>
 			</div>
-			<!-- OUtro Card -->
+			<!-- fim card -->
+			<!-- inicio card -->
 			<div class="card-produto">
-				<div class="card-image" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_feminina2.jpg');">
-					<div class="card-whishlist">
-						<ul class="social">
-							<li><i class="far fa-heart"></i></li>
-							<li><i class="fas fa-share"></i></li>
-						</ul>
-					</div>					
-				</div>
+				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
 				<div class="card-descricao">
-					<div class="descricao-texto">
-						<h4>Camiseta Feminina #2</h4>
-						<p>Uma linda camisa, para o teste a seguir</p>
+					<div class="descricao-titulo">
+						<h5>Camiseta Floral</h5>
 					</div>
-					<div class="descricao-shop">
-						<ul>
-							<li><a href="#">Leia Mais</a></li>
-							<li class="shop"><a href="#"><span><i class="fas fa-shopping-cart"></i></span>Comprar</a></li>
-						</ul>
+					<div class="produto-preco">
+						<p>R$ 20,00</p>
 					</div>
+				</div>
+				<div class="card-botoes">
+					<a href="#" class="carrinho">Adicione ao Carrinho</a>
+					<a href="#" class="detalhes">Mais Detalhes</a>
 				</div>
 			</div>
-						<!-- OUtro Card -->
+			<!-- fim card -->
+			<!-- inicio card -->
 			<div class="card-produto">
-				<div class="card-image" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_feminina2.jpg');">
-					<div class="card-whishlist">
-						<ul class="social">
-							<li><i class="far fa-heart"></i></li>
-							<li><i class="fas fa-share"></i></li>
-						</ul>
-					</div>					
-				</div>
+				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
 				<div class="card-descricao">
-					<div class="descricao-texto">
-						<h4>Camiseta Feminina #2</h4>
-						<p>Uma linda camisa, para o teste a seguir</p>
+					<div class="descricao-titulo">
+						<h5>Camiseta Floral</h5>
 					</div>
-					<div class="descricao-shop">
-						<ul>
-							<li><a href="#">Leia Mais</a></li>
-							<li class="shop"><a href="#"><span><i class="fas fa-shopping-cart"></i></span>Comprar</a></li>
-						</ul>
+					<div class="produto-preco">
+						<p>R$ 20,00</p>
 					</div>
+				</div>
+				<div class="card-botoes">
+					<a href="#" class="carrinho">Adicione ao Carrinho</a>
+					<a href="#" class="detalhes">Mais Detalhes</a>
 				</div>
 			</div>
-			<!-- FIM -->
-		</div>
+			<!-- fim card -->
+			<!-- inicio card -->
+			<div class="card-produto">
+				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
+				<div class="card-descricao">
+					<div class="descricao-titulo">
+						<h5>Camiseta Floral</h5>
+					</div>
+					<div class="produto-preco">
+						<p>R$ 20,00</p>
+					</div>
+				</div>
+				<div class="card-botoes">
+					<a href="#" class="carrinho">Adicione ao Carrinho</a>
+					<a href="#" class="detalhes">Mais Detalhes</a>
+				</div>
+			</div>
+			<!-- fim card -->
+			<!-- inicio card -->
+			<div class="card-produto">
+				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
+				<div class="card-descricao">
+					<div class="descricao-titulo">
+						<h5>Camiseta Floral</h5>
+					</div>
+					<div class="produto-preco">
+						<p>R$ 20,00</p>
+					</div>
+				</div>
+				<div class="card-botoes">
+					<a href="#" class="carrinho">Adicione ao Carrinho</a>
+					<a href="#" class="detalhes">Mais Detalhes</a>
+				</div>
+			</div>
+			<!-- fim card -->
+			<!-- inicio card -->
+			<div class="card-produto">
+				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
+				<div class="card-descricao">
+					<div class="descricao-titulo">
+						<h5>Camiseta Floral</h5>
+					</div>
+					<div class="produto-preco">
+						<p>R$ 20,00</p>
+					</div>
+				</div>
+				<div class="card-botoes">
+					<a href="#" class="carrinho">Adicione ao Carrinho</a>
+					<a href="#" class="detalhes">Mais Detalhes</a>
+				</div>
+			</div>
+			<!-- fim card -->
+			<!-- inicio card -->
+			<div class="card-produto">
+				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
+				<div class="card-descricao">
+					<div class="descricao-titulo">
+						<h5>Camiseta Floral</h5>
+					</div>
+					<div class="produto-preco">
+						<p>R$ 20,00</p>
+					</div>
+				</div>
+				<div class="card-botoes">
+					<a href="#" class="carrinho">Adicione ao Carrinho</a>
+					<a href="#" class="detalhes">Mais Detalhes</a>
+				</div>
+			</div>
+			<!-- fim card -->
+		</div>	
 	</div>
 </div>
 <?php
