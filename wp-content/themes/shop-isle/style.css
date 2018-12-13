@@ -113,15 +113,18 @@ span.menu-account ul li a:hover{
 	margin: 0 auto;
 }
 /* Config dos Cards dos produtos da Home */
+.box-produtos{
+	display: inline-flex;
+}
 .card-produtos-container{	
     margin-bottom: 60px;
 }
 .card-produto{	
     max-width: 230px;
     max-height: 330px;
-    margin: 0 auto;
     display: table;
     margin-bottom: 60px;
+    margin-left: 30px;
 }
 .card-produto .card-desconto{
 	position: absolute;
