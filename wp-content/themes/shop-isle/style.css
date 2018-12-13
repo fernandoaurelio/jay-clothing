@@ -104,7 +104,7 @@ span.menu-account ul li a:hover{
 }
 #wp-megamenu-primary{
 	background-color: #fff !important;
-	z-index: 1 !important;
+	z-index: 2 !important;
 }
 
 /* Configs do conteudo */
@@ -126,12 +126,12 @@ span.menu-account ul li a:hover{
     margin-bottom: 60px;
     margin-left: 30px;
 }
-.card-produto .card-desconto{
-	position: absolute;
-    margin-left: 6px;
+.card-produto .card-categoria{
+    position: absolute;
     margin-top: 4px;
+    padding: 5px;
 }
-.card-produto .card-desconto p{
+.card-produto .card-categoria p{
 	border-radius: 5px;
     padding: 0px 13px 1px 16px;
     background-color: #ffffff;
@@ -141,8 +141,25 @@ span.menu-account ul li a:hover{
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
+.card-imagem .desconto{
+    position: absolute;
+    margin-top: 195px;
+    margin-left: 5px;
+    border-radius: 80px;
+    background-color: #F94642;
+    width: 28px;
+    height: 28px;
+}
+.card-imagem .desconto p{
+	color: #fff;
+    text-align: center;
+    line-height: 2.2;
+    font-weight: 700;
+    font-size: 11px;
+    margin-top: 2px
+}
 .card-produto .card-imagem{
-    background-position: center top;
+    background-position: center;
     background-size: cover;
     display: block;
     background-repeat: no-repeat;
