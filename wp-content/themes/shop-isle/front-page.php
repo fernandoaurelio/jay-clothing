@@ -22,7 +22,7 @@ get_header();
 			$product = wc_get_product( $post_id );
 			$args = array(
 				'post_type' => 'product',
-				'product_cat' => 'homem'
+				//'product_cat' => 'homem'
 			);
 			
 			$query = new WP_Query( $args );
@@ -31,32 +31,45 @@ get_header();
 				while($query->have_posts()){
 					$query->the_post();
 					?>
-			<div class="box-produtos">
-				<div class="card-produto">
-					<div class="card-desconto">
-						<p>Outlet</p>
-					</div>
-					<div class="card-imagem" style="background-image: url('<?= woocommerce_get_product_thumbnail($post_id); ?>');"></div>
-					<div class="card-descricao">
-						<div class="descricao-titulo">
-							<h5><?= get_the_title();  ?></h5>
+					<div class="box-produtos">
+						<div class="card-produto">
+							<div class="card-categoria">
+								<p>
+									<?php 
+									$categorias = get_the_terms( $post_id, 'product_cat' );
+
+									foreach ($categorias as $categoria) {
+										
+									}
+									echo $categoria->name;
+									?>
+								</p>
+							</div>
+							<div class="card-imagem" style="background-image: url(<?= get_the_post_thumbnail_url(); ?>);">
+								<div class="desconto">
+									<p>20%</p>
+								</div>
+							</div>
+							<div class="card-descricao">
+								<div class="descricao-titulo">
+									<h5><?= get_the_title();  ?></h5>
+								</div>
+								<div class="produto-preco">
+									<p><?= $product->get_price();  ?></p>
+								</div>
+							</div>
+							<div class="card-botoes">
+								<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
+								<a href="<?= get_the_permalink($post_id);  ?>" class="detalhes">Mais Detalhes</a>
+							</div>
 						</div>
-						<div class="produto-preco">
-							<p><?= $product->get_price();  ?></p>
-						</div>
+						<!-- fim card -->
 					</div>
-					<div class="card-botoes">
-						<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-						<a href="<?= get_the_permalink($post_id);  ?>" class="detalhes">Mais Detalhes</a>
-					</div>
-				</div>
-				<!-- fim card -->
-					<?php
+						<?php
+					}
 				}
-			}
-			
-			 ?>
-			</div>
+
+				?>
 
 		</div>	
 	</div>
