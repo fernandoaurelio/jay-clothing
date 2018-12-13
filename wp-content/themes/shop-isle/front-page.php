@@ -18,292 +18,46 @@ get_header();
 		</div>
 		<div class="card-produtos-container">
 			<!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
+			<?php 
+			$product = wc_get_product( $post_id );
+			$args = array(
+				'post_type' => 'product',
+				'product_cat' => 'homem'
+			);
+			
+			$query = new WP_Query( $args );
+
+			if($query->have_posts()){
+				while($query->have_posts()){
+					$query->the_post();
+					?>
+			<div class="box-produtos">
+				<div class="card-produto">
+					<div class="card-desconto">
+						<p>Outlet</p>
 					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
+					<div class="card-imagem" style="background-image: url('<?= woocommerce_get_product_thumbnail($post_id); ?>');"></div>
+					<div class="card-descricao">
+						<div class="descricao-titulo">
+							<h5><?= get_the_title();  ?></h5>
+						</div>
+						<div class="produto-preco">
+							<p><?= $product->get_price();  ?></p>
+						</div>
+					</div>
+					<div class="card-botoes">
+						<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
+						<a href="<?= get_the_permalink($post_id);  ?>" class="detalhes">Mais Detalhes</a>
 					</div>
 				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
+				<!-- fim card -->
+					<?php
+				}
+			}
+			
+			 ?>
 			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card --><!-- inicio card -->
-			<div class="card-produto">
-				<div class="card-desconto">
-					<p>Outlet</p>
-				</div>
-				<div class="card-imagem" style="background-image: url('<?= bloginfo('url');  ?>/wp-content/uploads/2018/12/roupa_masculina2.jpg');"></div>
-				<div class="card-descricao">
-					<div class="descricao-titulo">
-						<h5>Camiseta Floral</h5>
-					</div>
-					<div class="produto-preco">
-						<p>R$ 20,00</p>
-					</div>
-				</div>
-				<div class="card-botoes">
-					<a href="#" class="carrinho"><span><i class="fas fa-cart-plus"></i> </span>Adicione ao Carrinho</a>
-					<a href="#" class="detalhes">Mais Detalhes</a>
-				</div>
-			</div>
-			<!-- fim card -->
-		
+
 		</div>	
 	</div>
 </div>
