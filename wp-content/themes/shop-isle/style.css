@@ -191,8 +191,28 @@ span.menu-account ul li a:hover{
 	border: 1px solid #000;
     padding: 9px 15px;
     margin-bottom: 12px;
+    font-size: 11px;
 }
 .card-botoes a.carrinho span{
 	margin-right: 12px;
     font-size: 15px;
+}
+.added:after{
+	content: '\f00c';
+	font-family: 'FontAwesome';
+	font-size: 15px;
+	color: white;
+}
+.loading:after{
+	position: absolute;
+	content: '\f110';
+	font-family: 'FontAwesome';
+	font-size: 15px;
+}
+.add_to_cart_button{
+	opacity: unset;
+	position: unset;
+}
+.added_to_cart{
+	display: none;
 }
