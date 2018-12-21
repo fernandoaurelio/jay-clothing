@@ -10,6 +10,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) { ?>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -38,17 +40,7 @@
 			</a>
 			<div class="menu-conta">
 				<span class="item-menu">
-					<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">Minha Conta</a>
-					<span class="menu-account esconder">						
-						<ul>
-							<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
-								<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
-									<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
-								</li>
-							<?php endforeach; ?>
-						</ul>
-					</span>
-				</span>
+					<?php echo do_shortcode('[naologado]'); ?>
 			</div>
 		</div>
 	</nav>
