@@ -7,7 +7,7 @@
  */
 
 function wpdocs_theme_name_scripts() {
-    wp_enqueue_script( 'script-utils', get_template_directory_uri() . '/library/utils.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'script-utils', get_template_directory_uri() . '/library/utils.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
@@ -43,3 +43,10 @@ require get_template_directory() . '/inc/init.php';
  * Note: Do not add any custom code here. Please use a child theme so that your customizations aren't lost during updates.
  * http://codex.wordpress.org/Child_Themes
  */
+
+//Adicionando SHORTCODES
+function jc_add_shortcodes() {
+    require_once( 'library/shortcodes/jc-shortcode-cliente-login.php' );    
+}
+add_action( 'after_setup_theme', 'jc_add_shortcodes' );
+
