@@ -1,0 +1,22 @@
+2018-12-25T13:16:50+00:00 CRITICAL Cannot use object of type WC_Product_Simple as array in C:\xampp\htdocs\jay-clothing\wp-content\plugins\woocommerce\templates\single-product\up-sells.php on line 39
+
+2018-12-25T13:18:34+00:00 CRITICAL Cannot use object of type WC_Product_Simple as array in C:\xampp\htdocs\jay-clothing\wp-content\plugins\woocommerce\templates\single-product\up-sells.php on line 39
+
+2018-12-25T14:02:30+00:00 CRITICAL Call to a member function get_sale_price() on string in C:\xampp\htdocs\jay-clothing\wp-content\plugins\woocommerce\templates\content-single-product.php on line 37
+
+2018-12-25T15:01:41+00:00 CRITICAL Call to a member function add_to_cart_url() on string in C:\xampp\htdocs\jay-clothing\wp-content\themes\shop-isle\library\shortcodes\jc-shortcode-quantidade.php on line 9
+
+2018-12-25T15:02:15+00:00 CRITICAL Call to a member function add_to_cart_url() on null in C:\xampp\htdocs\jay-clothing\wp-content\themes\shop-isle\library\shortcodes\jc-shortcode-quantidade.php on line 9
+
+2018-12-25T15:02:32+00:00 CRITICAL Call to a member function add_to_cart_url() on string in C:\xampp\htdocs\jay-clothing\wp-content\themes\shop-isle\library\shortcodes\jc-shortcode-quantidade.php on line 9
+
+2018-12-25T15:55:06+00:00 CRITICAL Call to a member function get_gallery_attachment_ids() on string in C:\xampp\htdocs\jay-clothing\wp-content\plugins\woocommerce\templates\content-single-product.php on line 37
+
+2018-12-25T17:25:11+00:00 CRITICAL Call to undefined method WC_Product_Variable::regular_price() in C:\xampp\htdocs\jay-clothing\wp-content\plugins\woocommerce\templates\content-single-product.php on line 66
+
+2018-12-25T17:25:33+00:00 CRITICAL Call to undefined method WC_Product_Variable::regular_price() in C:\xampp\htdocs\jay-clothing\wp-content\plugins\woocommerce\templates\content-single-product.php on line 66
+
+2018-12-25T17:25:43+00:00 CRITICAL Call to undefined method WC_Product_Variable::regular_price() in C:\xampp\htdocs\jay-clothing\wp-content\plugins\woocommerce\templates\content-single-product.php on line 66
+
+2018-12-25T17:35:18+00:00 CRITICAL Call to undefined method WC_Product_Variable::sale_price() in C:\xampp\htdocs\jay-clothing\wp-content\plugins\woocommerce\templates\content-single-product.php on line 69
+

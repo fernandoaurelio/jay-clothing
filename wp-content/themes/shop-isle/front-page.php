@@ -59,8 +59,7 @@ get_header();
 								</div>
 							</div>
 							<div class="card-botoes">
-								<a href="<?= do_shortcode('[add_to_cart_url id="'.$post->ID.'"]');  ?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart carrinho" data-product_id="<?= $post->ID;  ?>" data-product_sku="" aria-label="Add “<?php echo get_the_title($post_id); ?>” ao carrinho" rel="nofollow">Comprar</a>
-								<a href="<?= get_the_permalink($post_id);  ?>" class="detalhes">Mais Detalhes</a>
+								<a href="<?= get_the_permalink($post_id);  ?>" class="carrinho">Comprar</a>								
 							</div>
 						</div>
 						<!-- fim card -->						

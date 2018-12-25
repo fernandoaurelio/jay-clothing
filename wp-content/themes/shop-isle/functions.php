@@ -47,6 +47,9 @@ require get_template_directory() . '/inc/init.php';
 //Adicionando SHORTCODES
 function jc_add_shortcodes() {
     require_once( 'library/shortcodes/jc-shortcode-cliente-login.php' );    
+    require_once( 'library/shortcodes/jc-shortcode-quantidade.php' );    
+    require_once( 'library/shortcodes/jc-shortcode-estrelas.php' );    
+    require_once( 'library/shortcodes/jc-shortcode-preco.php' );    
 }
 add_action( 'after_setup_theme', 'jc_add_shortcodes' );
 

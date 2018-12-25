@@ -1,0 +1,2 @@
+2018-12-24T22:02:31+00:00 CRITICAL Call to a member function get_price() on null in C:\xampp\htdocs\jay-clothing\wp-content\plugins\woocommerce\templates\single-product\related.php on line 57
+

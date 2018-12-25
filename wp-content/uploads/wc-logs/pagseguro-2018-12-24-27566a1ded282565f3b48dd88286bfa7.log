@@ -1,0 +1,262 @@
+12-24-2018 @ 19:28:35 - Requesting token for order 143 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-143]]></reference>
+  <sender>
+    <email><![CDATA[fernandoaurelios@gmail.com]]></email>
+    <name><![CDATA[Fernando Aurélio Silveira]]></name>
+    <phone>
+      <areaCode>47</areaCode>
+      <number>9914165555</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Monsenhor Gercino, 4631]]></street>
+      <postalCode>89230325</postalCode>
+      <city><![CDATA[Joinville]]></city>
+      <state>SC</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Camiseta #2]]></description>
+      <amount>20.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Camiseta #4]]></description>
+      <amount>20.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>3</id>
+      <description><![CDATA[Outlet #1]]></description>
+      <amount>5.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://localhost/jay-clothing/checkout/order-received/143/?key=wc_order_5c214f7ba0c9f]]></redirectURL>
+  <notificationURL><![CDATA[http://localhost/jay-clothing/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+12-24-2018 @ 19:28:36 - Failed to generate the PagSeguro Payment Token: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [cache-control] => max-age=180
+                    [content-length] => 166
+                    [content-type] => application/xml;charset=ISO-8859-1
+                    [date] => Mon, 24 Dec 2018 21:28:35 GMT
+                    [expires] => Mon, 24 Dec 2018 21:31:35 GMT
+                    [server] => Apache-Coyote/1.1
+                    [set-cookie] => dtCookie=6$A335C530BEAC1B08276E4FDD361FB85A; Path=/; Domain=.uol.com.br
+                    [vary] => User-Agent
+                    [x-oneagent-js-injection] => true
+                )
+
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11014</code><message>senderPhone invalid value: 9914165555</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+            [0] => WP_Http_Cookie Object
+                (
+                    [name] => dtCookie
+                    [value] => 6$A335C530BEAC1B08276E4FDD361FB85A
+                    [expires] => 
+                    [path] => /
+                    [domain] => uol.com.br
+                )
+
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11014</code><message>senderPhone invalid value: 9914165555</message></error></errors>
+                    [raw] => HTTP/1.1 400 Bad Request
+Cache-Control: max-age=180
+Content-Length: 166
+Content-Type: application/xml;charset=ISO-8859-1
+Date: Mon, 24 Dec 2018 21:28:35 GMT
+Expires: Mon, 24 Dec 2018 21:31:35 GMT
+Server: Apache-Coyote/1.1
+Set-Cookie: dtCookie=6$A335C530BEAC1B08276E4FDD361FB85A; Path=/; Domain=.uol.com.br
+Vary: User-Agent
+X-Oneagent-Js-Injection: true
+Connection: close
+
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11014</code><message>senderPhone invalid value: 9914165555</message></error></errors>
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [cache-control] => Array
+                                        (
+                                            [0] => max-age=180
+                                        )
+
+                                    [content-length] => Array
+                                        (
+                                            [0] => 166
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => application/xml;charset=ISO-8859-1
+                                        )
+
+                                    [date] => Array
+                                        (
+                                            [0] => Mon, 24 Dec 2018 21:28:35 GMT
+                                        )
+
+                                    [expires] => Array
+                                        (
+                                            [0] => Mon, 24 Dec 2018 21:31:35 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => Apache-Coyote/1.1
+                                        )
+
+                                    [set-cookie] => Array
+                                        (
+                                            [0] => dtCookie=6$A335C530BEAC1B08276E4FDD361FB85A; Path=/; Domain=.uol.com.br
+                                        )
+
+                                    [vary] => Array
+                                        (
+                                            [0] => User-Agent
+                                        )
+
+                                    [x-oneagent-js-injection] => Array
+                                        (
+                                            [0] => true
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 400
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://ws.sandbox.pagseguro.uol.com.br/v2/checkout?email=fernandoaurelios@gmail.com&token=F30F583AE6054E79846E8BEF9A062310
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                    [dtCookie] => Requests_Cookie Object
+                                        (
+                                            [name] => dtCookie
+                                            [value] => 6$A335C530BEAC1B08276E4FDD361FB85A
+                                            [attributes] => Requests_Utility_CaseInsensitiveDictionary Object
+                                                (
+                                                    [data:protected] => Array
+                                                        (
+                                                            [path] => /
+                                                            [domain] => uol.com.br
+                                                        )
+
+                                                )
+
+                                            [flags] => Array
+                                                (
+                                                    [creation] => 1545686916
+                                                    [last-access] => 1545686916
+                                                    [persistent] => 
+                                                    [host-only] => 
+                                                )
+
+                                            [reference_time] => 1545686916
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+12-24-2018 @ 19:29:51 - Requesting token for order 144 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[WC-144]]></reference>
+  <sender>
+    <email><![CDATA[fernandoaurelios@gmail.com]]></email>
+    <name><![CDATA[Fernando Aurélio Silveira]]></name>
+    <phone>
+      <areaCode>47</areaCode>
+      <number>991413418</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Monsenhor Gercino, 4631]]></street>
+      <postalCode>89230325</postalCode>
+      <city><![CDATA[Joinville]]></city>
+      <state>SC</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Camiseta #2]]></description>
+      <amount>20.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Camiseta #4]]></description>
+      <amount>20.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>3</id>
+      <description><![CDATA[Outlet #1]]></description>
+      <amount>5.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[http://localhost/jay-clothing/checkout/order-received/144/?key=wc_order_5c214fc8e1de8]]></redirectURL>
+  <notificationURL><![CDATA[http://localhost/jay-clothing/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+12-24-2018 @ 19:29:52 - PagSeguro Payment Token created with success! The Token is: C3E95634DADAC5F664654F9544A8F623

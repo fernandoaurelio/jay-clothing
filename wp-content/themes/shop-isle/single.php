@@ -19,7 +19,6 @@ get_header(); ?>
 
 				<!-- Content column start -->
 				<div class="col-sm-8 shop-isle-page-content">
-
 					<?php
 					while ( have_posts() ) :
 						the_post();
