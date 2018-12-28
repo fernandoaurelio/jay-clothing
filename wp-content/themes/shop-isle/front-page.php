@@ -46,16 +46,13 @@ get_header();
 								</p>
 							</div>
 							<div class="card-imagem" style="background-image: url(<?= get_the_post_thumbnail_url(); ?>);">
-								<div class="desconto">
-									<p>20%</p>
-								</div>
 							</div>
 							<div class="card-descricao">
 								<div class="descricao-titulo">
 									<h5><?= get_the_title();  ?></h5>
 								</div>
 								<div class="produto-preco">
-									<p><?= $product->get_price();  ?></p>
+									<?php echo do_shortcode('[preco]'); ?>
 								</div>
 							</div>
 							<div class="card-botoes">

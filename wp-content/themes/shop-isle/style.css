@@ -181,19 +181,13 @@ span.menu-account ul li a:hover{
     height: 230px;
 }
 .descricao-titulo h5{	
-    width: 50%;
-    float: left;
+    width: 100%;
     font-weight: 600;
     color: #000;
     font-size: 16px;
 }
 .card-descricao .produto-preco{	
-    width: 50%;
-    float: right;
-    padding-left: 50px;
-}
-.produto-preco p{
-	line-height: 3.5;
+    text-align: center;
 }
 .card-botoes a.carrinho,
 .card-botoes a.detalhes{	
@@ -291,7 +285,7 @@ span.menu-account ul li a:hover{
 .bloco-info label.tamanho{
 	display: inline-block;
     float: left;
-    padding: 10px 20px;
+    padding: 0px 10px;
     border: 1px solid #000;
     margin-left: 13px;
     cursor: pointer;
@@ -319,4 +313,15 @@ p.preco span.old
     text-decoration: line-through;
     margin-right: 30px;
     font-weight: 300;
+}
+.produto-preco span.new{
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: red;
+    font-family: 'roboto';
+}
+.produto-preco span.old{
+    font-family: 'roboto';
+    text-decoration: line-through;
 }
