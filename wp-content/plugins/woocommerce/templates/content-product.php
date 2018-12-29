@@ -25,43 +25,34 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <li <?php wc_product_class(); ?>>
-	<?php
-	/**
-	 * Hook: woocommerce_before_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_open - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item' );
+	<div class="box-produtos">
+		<div class="card-produto">
+			<div class="card-categoria">
+				<p>
+					<?php 
+					$categorias = get_the_terms( $post_id, 'product_cat' );
 
-	/**
-	 * Hook: woocommerce_before_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_show_product_loop_sale_flash - 10
-	 * @hooked woocommerce_template_loop_product_thumbnail - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item_title' );
-
-	/**
-	 * Hook: woocommerce_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_product_title - 10
-	 */
-	do_action( 'woocommerce_shop_loop_item_title' );
-
-	/**
-	 * Hook: woocommerce_after_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_rating - 5
-	 * @hooked woocommerce_template_loop_price - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop_item_title' );
-
-	/**
-	 * Hook: woocommerce_after_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_close - 5
-	 * @hooked woocommerce_template_loop_add_to_cart - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop_item' );
-	?>
+					foreach ($categorias as $categoria) {
+						
+					}
+					echo $categoria->name;
+					?>
+				</p>
+			</div>
+			<div class="card-imagem" style="background-image: url(<?= get_the_post_thumbnail_url(); ?>);">
+			</div>
+			<div class="card-descricao">
+				<div class="descricao-titulo">
+					<h5><?= get_the_title();  ?></h5>
+				</div>
+				<div class="produto-preco">
+					<?php echo do_shortcode('[preco]'); ?>
+				</div>
+			</div>
+			<div class="card-botoes">
+				<a href="<?= get_the_permalink($post_id);  ?>" class="carrinho">Comprar</a>								
+			</div>
+		</div>
+		<!-- fim card -->						
+	</div>
 </li>

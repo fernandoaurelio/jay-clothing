@@ -38,7 +38,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1">
-				<h1 class="module-title font-alt"><?php the_title(); ?></h1>
+				<h1 class="module-title font-alt">re<?php the_title(); ?></h1>
 
 				<?php
 
